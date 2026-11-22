@@ -13,6 +13,11 @@ npm test             # 35 unit, integration and end-to-end journey tests
 npm run build && npm run preview   # production build, self-hosted with the same /api routes
 ```
 
+**Live (GitHub Pages):** https://divine1208.github.io/worldlens/ — every push to `main` rebuilds and republishes automatically.
+
+```bash
+```
+
 **Deploy to Vercel:** import the folder. `vercel.json` and `api/*.ts` are already set up. To keep keys on the server, add them as environment variables (see `.env.example`), then switch on **Vault → "Use server keys"**.
 
 ## Two modes
