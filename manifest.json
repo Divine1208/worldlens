@@ -1,0 +1,27 @@
+{
+  "name": "WorldLens — Personal Intelligence Desk",
+  "short_name": "WorldLens",
+  "start_url": "/worldlens/",
+  "scope": "/worldlens/",
+  "display": "standalone",
+  "background_color": "#0b1120",
+  "theme_color": "#0b1120",
+  "icons": [
+    {
+      "src": "/worldlens/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/worldlens/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/worldlens/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
