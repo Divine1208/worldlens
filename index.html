@@ -3,17 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#020617" />
-    <meta name="description" content="Personal news intelligence desk: real-time hourly IST briefing, plain-English deep dives, market gaps and a global opportunity tracker." />
-    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#0b1120" />
+    <meta name="description" content="Personal news intelligence desk: real-time hourly IST briefing, plain-english tech & market signals, smart reading queue." />
+    <link rel="manifest" href="manifest.json" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/icon-192.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <title>WorldLens — Personal Intelligence Desk</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('sw.js');
+        });
+      }
+    </script>
   </body>
 </html>
